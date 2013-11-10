@@ -1,0 +1,5 @@
+$(OBJDIR)/cdluapdf.o: lua3/cdluapdf.c ../include/cd.h ../include/cd_old.h \
+ ../include/cdpdf.h /cygdrive/d/tecgraf/lua/include/lua.h \
+ /cygdrive/d/tecgraf/lua/include/lauxlib.h \
+ /cygdrive/d/tecgraf/lua/include/lua.h ../include/cdlua.h \
+ ../include/cdluapdf.h ../include/cdlua3_private.h

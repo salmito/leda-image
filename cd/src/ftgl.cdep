@@ -1,0 +1,603 @@
+$(OBJDIR)/FTBuffer.o: ftgl/FTBuffer.cpp ftgl/config.h ftgl/FTGL/ftgl.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h
+$(OBJDIR)/FTCharmap.o: ftgl/FTCharmap.cpp ftgl/config.h ftgl/FTFace.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ ftgl/FTGL/ftgl.h freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h \
+ ftgl/FTGL/FTBBox.h ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h \
+ ftgl/FTGL/FTBitmapGlyph.h ftgl/FTGL/FTBufferGlyph.h \
+ ftgl/FTGL/FTExtrdGlyph.h ftgl/FTGL/FTOutlineGlyph.h \
+ ftgl/FTGL/FTPixmapGlyph.h ftgl/FTGL/FTPolyGlyph.h \
+ ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h ftgl/FTGL/FTGLBitmapFont.h \
+ ftgl/FTGL/FTBufferFont.h ftgl/FTGL/FTGLExtrdFont.h \
+ ftgl/FTGL/FTGLOutlineFont.h ftgl/FTGL/FTGLPixmapFont.h \
+ ftgl/FTGL/FTGLPolygonFont.h ftgl/FTGL/FTGLTextureFont.h \
+ ftgl/FTGL/FTLayout.h ftgl/FTGL/FTSimpleLayout.h ftgl/FTSize.h \
+ ftgl/FTCharmap.h ftgl/FTCharToGlyphIndexMap.h
+$(OBJDIR)/FTContour.o: ftgl/FTContour.cpp ftgl/config.h ftgl/FTContour.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTVector.h
+$(OBJDIR)/FTFace.o: ftgl/FTFace.cpp ftgl/config.h ftgl/FTFace.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ ftgl/FTGL/ftgl.h freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h \
+ ftgl/FTGL/FTBBox.h ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h \
+ ftgl/FTGL/FTBitmapGlyph.h ftgl/FTGL/FTBufferGlyph.h \
+ ftgl/FTGL/FTExtrdGlyph.h ftgl/FTGL/FTOutlineGlyph.h \
+ ftgl/FTGL/FTPixmapGlyph.h ftgl/FTGL/FTPolyGlyph.h \
+ ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h ftgl/FTGL/FTGLBitmapFont.h \
+ ftgl/FTGL/FTBufferFont.h ftgl/FTGL/FTGLExtrdFont.h \
+ ftgl/FTGL/FTGLOutlineFont.h ftgl/FTGL/FTGLPixmapFont.h \
+ ftgl/FTGL/FTGLPolygonFont.h ftgl/FTGL/FTGLTextureFont.h \
+ ftgl/FTGL/FTLayout.h ftgl/FTGL/FTSimpleLayout.h ftgl/FTSize.h \
+ ftgl/FTLibrary.h freetype2/freetype/tttables.h
+$(OBJDIR)/FTGlyphContainer.o: ftgl/FTGlyphContainer.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTGlyphContainer.h ftgl/FTVector.h \
+ ftgl/FTFace.h ftgl/FTSize.h ftgl/FTCharmap.h \
+ ftgl/FTCharToGlyphIndexMap.h
+$(OBJDIR)/FTLibrary.o: ftgl/FTLibrary.cpp ftgl/config.h ftgl/FTLibrary.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h ftgl/FTGL/ftgl.h \
+ freetype2/freetype/ftglyph.h freetype2/freetype/ftoutln.h \
+ ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h ftgl/FTGL/FTBuffer.h \
+ ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h ftgl/FTGL/FTBufferGlyph.h \
+ ftgl/FTGL/FTExtrdGlyph.h ftgl/FTGL/FTOutlineGlyph.h \
+ ftgl/FTGL/FTPixmapGlyph.h ftgl/FTGL/FTPolyGlyph.h \
+ ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h ftgl/FTGL/FTGLBitmapFont.h \
+ ftgl/FTGL/FTBufferFont.h ftgl/FTGL/FTGLExtrdFont.h \
+ ftgl/FTGL/FTGLOutlineFont.h ftgl/FTGL/FTGLPixmapFont.h \
+ ftgl/FTGL/FTGLPolygonFont.h ftgl/FTGL/FTGLTextureFont.h \
+ ftgl/FTGL/FTLayout.h ftgl/FTGL/FTSimpleLayout.h
+$(OBJDIR)/FTPoint.o: ftgl/FTPoint.cpp ftgl/config.h ftgl/FTGL/ftgl.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h
+$(OBJDIR)/FTSize.o: ftgl/FTSize.cpp ftgl/config.h ftgl/FTSize.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h ftgl/FTGL/ftgl.h \
+ freetype2/freetype/ftglyph.h freetype2/freetype/ftoutln.h \
+ ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h ftgl/FTGL/FTBuffer.h \
+ ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h ftgl/FTGL/FTBufferGlyph.h \
+ ftgl/FTGL/FTExtrdGlyph.h ftgl/FTGL/FTOutlineGlyph.h \
+ ftgl/FTGL/FTPixmapGlyph.h ftgl/FTGL/FTPolyGlyph.h \
+ ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h ftgl/FTGL/FTGLBitmapFont.h \
+ ftgl/FTGL/FTBufferFont.h ftgl/FTGL/FTGLExtrdFont.h \
+ ftgl/FTGL/FTGLOutlineFont.h ftgl/FTGL/FTGLPixmapFont.h \
+ ftgl/FTGL/FTGLPolygonFont.h ftgl/FTGL/FTGLTextureFont.h \
+ ftgl/FTGL/FTLayout.h ftgl/FTGL/FTSimpleLayout.h
+$(OBJDIR)/FTVectoriser.o: ftgl/FTVectoriser.cpp ftgl/config.h ftgl/FTInternals.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTVectoriser.h ftgl/FTContour.h \
+ ftgl/FTVector.h ftgl/FTList.h
+$(OBJDIR)/FTGlyph.o: ftgl/FTGlyph/FTGlyph.cpp ftgl/config.h ftgl/FTGL/ftgl.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTGlyphImpl.h
+$(OBJDIR)/FTGlyphGlue.o: ftgl/FTGlyph/FTGlyphGlue.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h
+$(OBJDIR)/FTBitmapGlyph.o: ftgl/FTGlyph/FTBitmapGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTBitmapGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h
+$(OBJDIR)/FTBufferGlyph.o: ftgl/FTGlyph/FTBufferGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTBufferGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h
+$(OBJDIR)/FTExtrudeGlyph.o: ftgl/FTGlyph/FTExtrudeGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTExtrudeGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h \
+ ftgl/FTVectoriser.h ftgl/FTContour.h ftgl/FTVector.h ftgl/FTList.h
+$(OBJDIR)/FTOutlineGlyph.o: ftgl/FTGlyph/FTOutlineGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTOutlineGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h \
+ ftgl/FTVectoriser.h ftgl/FTContour.h ftgl/FTVector.h ftgl/FTList.h
+$(OBJDIR)/FTPixmapGlyph.o: ftgl/FTGlyph/FTPixmapGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTPixmapGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h
+$(OBJDIR)/FTPolygonGlyph.o: ftgl/FTGlyph/FTPolygonGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTPolygonGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h \
+ ftgl/FTVectoriser.h ftgl/FTContour.h ftgl/FTVector.h ftgl/FTList.h
+$(OBJDIR)/FTTextureGlyph.o: ftgl/FTGlyph/FTTextureGlyph.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTGlyph/FTTextureGlyphImpl.h ftgl/FTGlyph/FTGlyphImpl.h
+$(OBJDIR)/FTFont.o: ftgl/FTFont/FTFont.cpp ftgl/config.h ftgl/FTInternals.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTUnicode.h ftgl/FTFont/FTFontImpl.h \
+ ftgl/FTGL/ftgl.h ftgl/FTFace.h ftgl/FTSize.h \
+ ftgl/FTFont/FTBitmapFontImpl.h ftgl/FTFont/FTExtrudeFontImpl.h \
+ ftgl/FTFont/FTOutlineFontImpl.h ftgl/FTFont/FTPixmapFontImpl.h \
+ ftgl/FTFont/FTPolygonFontImpl.h ftgl/FTFont/FTTextureFontImpl.h \
+ ftgl/FTVector.h ftgl/FTGlyphContainer.h ftgl/FTVector.h
+$(OBJDIR)/FTFontGlue.o: ftgl/FTFont/FTFontGlue.cpp ftgl/config.h ftgl/FTInternals.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h
+$(OBJDIR)/FTBitmapFont.o: ftgl/FTFont/FTBitmapFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/FTBitmapFontImpl.h ftgl/FTFont/FTFontImpl.h ftgl/FTFace.h \
+ ftgl/FTSize.h
+$(OBJDIR)/FTBufferFont.o: ftgl/FTFont/FTBufferFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/FTBufferFontImpl.h ftgl/FTFont/FTFontImpl.h ftgl/FTFace.h \
+ ftgl/FTSize.h
+$(OBJDIR)/FTExtrudeFont.o: ftgl/FTFont/FTExtrudeFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/FTExtrudeFontImpl.h ftgl/FTFont/FTFontImpl.h ftgl/FTFace.h \
+ ftgl/FTSize.h
+$(OBJDIR)/FTOutlineFont.o: ftgl/FTFont/FTOutlineFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/FTOutlineFontImpl.h ftgl/FTFont/FTFontImpl.h ftgl/FTFace.h \
+ ftgl/FTSize.h
+$(OBJDIR)/FTPixmapFont.o: ftgl/FTFont/FTPixmapFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/FTPixmapFontImpl.h ftgl/FTFont/FTFontImpl.h ftgl/FTFace.h \
+ ftgl/FTSize.h
+$(OBJDIR)/FTPolygonFont.o: ftgl/FTFont/FTPolygonFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/FTPolygonFontImpl.h ftgl/FTFont/FTFontImpl.h ftgl/FTFace.h \
+ ftgl/FTSize.h
+$(OBJDIR)/FTTextureFont.o: ftgl/FTFont/FTTextureFont.cpp ftgl/config.h \
+ ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTInternals.h ftgl/FTGL/ftgl.h \
+ ftgl/FTFont/../FTGlyph/FTTextureGlyphImpl.h \
+ ftgl/FTFont/../FTGlyph/FTGlyphImpl.h ftgl/FTFont/./FTTextureFontImpl.h \
+ ftgl/FTFont/./FTFontImpl.h ftgl/FTFace.h ftgl/FTSize.h ftgl/FTVector.h
+$(OBJDIR)/FTLayout.o: ftgl/FTLayout/FTLayout.cpp ftgl/config.h ftgl/FTGL/ftgl.h \
+ freetype2/ft2build.h freetype2/freetype/config/ftheader.h \
+ freetype2/freetype/freetype.h freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTLayout/../FTFont/FTFontImpl.h \
+ ftgl/FTFace.h ftgl/FTGL/ftgl.h ftgl/FTSize.h \
+ ftgl/FTLayout/./FTLayoutImpl.h ftgl/FTSize.h ftgl/FTGlyphContainer.h \
+ ftgl/FTVector.h
+$(OBJDIR)/FTLayoutGlue.o: ftgl/FTLayout/FTLayoutGlue.cpp ftgl/config.h \
+ ftgl/FTInternals.h ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h
+$(OBJDIR)/FTSimpleLayout.o: ftgl/FTLayout/FTSimpleLayout.cpp ftgl/config.h \
+ ftgl/FTInternals.h ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ftgl/FTUnicode.h ftgl/FTGlyphContainer.h \
+ ftgl/FTVector.h ftgl/FTLayout/FTSimpleLayoutImpl.h \
+ ftgl/FTLayout/FTLayoutImpl.h ftgl/FTSize.h

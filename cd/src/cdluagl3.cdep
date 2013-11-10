@@ -1,0 +1,5 @@
+$(OBJDIR)/cdluagl.o: lua3/cdluagl.c ../include/cd.h ../include/cd_old.h \
+ ../include/cdgl.h /cygdrive/d/tecgraf/lua/include/lua.h \
+ /cygdrive/d/tecgraf/lua/include/lauxlib.h \
+ /cygdrive/d/tecgraf/lua/include/lua.h ../include/cdlua.h \
+ ../include/cdluagl.h ../include/cdlua3_private.h

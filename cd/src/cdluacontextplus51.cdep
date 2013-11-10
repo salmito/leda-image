@@ -1,0 +1,5 @@
+$(OBJDIR)/cdluacontextplus5.o: lua5/cdluacontextplus5.c ../include/cd.h \
+ /cygdrive/d/tecgraf/lua5.1/include/lua.h \
+ /cygdrive/d/tecgraf/lua5.1/include/luaconf.h \
+ /cygdrive/d/tecgraf/lua5.1/include/lauxlib.h \
+ /cygdrive/d/tecgraf/lua5.1/include/lua.h

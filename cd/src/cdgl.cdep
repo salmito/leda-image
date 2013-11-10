@@ -1,0 +1,19 @@
+$(OBJDIR)/cdgl.o: drv/cdgl.c ftgl/FTGL/ftgl.h freetype2/ft2build.h \
+ freetype2/freetype/config/ftheader.h freetype2/freetype/freetype.h \
+ freetype2/freetype/config/ftconfig.h \
+ freetype2/freetype/config/ftoption.h \
+ freetype2/freetype/config/ftstdlib.h freetype2/freetype/fterrors.h \
+ freetype2/freetype/ftmoderr.h freetype2/freetype/fterrdef.h \
+ freetype2/freetype/fttypes.h freetype2/freetype/ftsystem.h \
+ freetype2/freetype/ftimage.h freetype2/freetype/ftglyph.h \
+ freetype2/freetype/ftoutln.h ftgl/FTGL/FTPoint.h ftgl/FTGL/FTBBox.h \
+ ftgl/FTGL/FTBuffer.h ftgl/FTGL/FTGlyph.h ftgl/FTGL/FTBitmapGlyph.h \
+ ftgl/FTGL/FTBufferGlyph.h ftgl/FTGL/FTExtrdGlyph.h \
+ ftgl/FTGL/FTOutlineGlyph.h ftgl/FTGL/FTPixmapGlyph.h \
+ ftgl/FTGL/FTPolyGlyph.h ftgl/FTGL/FTTextureGlyph.h ftgl/FTGL/FTFont.h \
+ ftgl/FTGL/FTGLBitmapFont.h ftgl/FTGL/FTBufferFont.h \
+ ftgl/FTGL/FTGLExtrdFont.h ftgl/FTGL/FTGLOutlineFont.h \
+ ftgl/FTGL/FTGLPixmapFont.h ftgl/FTGL/FTGLPolygonFont.h \
+ ftgl/FTGL/FTGLTextureFont.h ftgl/FTGL/FTLayout.h \
+ ftgl/FTGL/FTSimpleLayout.h ../include/cd.h ../include/cd_private.h \
+ ../include/cdgl.h
