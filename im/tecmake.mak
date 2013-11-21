@@ -658,7 +658,7 @@ endif
 
 #---------------------------------#
 # Tecgraf Libraries Location
-TECTOOLS_HOME ?= ../
+TECTOOLS_HOME ?= ../..
 
 IUP   ?= $(TECTOOLS_HOME)/iup
 CD    ?= $(TECTOOLS_HOME)/cd
@@ -711,7 +711,7 @@ ifdef USE_LUA51
 endif
 
 ifdef USE_LUA52
-  LUA_SUFFIX ?= 52
+  LUA_SUFFIX ?= 5.2
   LIBLUASUFX := 52
   override USE_LUA = Yes
   LUA := $(LUA52)

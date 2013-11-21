@@ -1,4 +1,0 @@
-$(OBJDIR)/cdxrender.o: xrender/cdxrender.c x11/cdx11.h ../include/cd.h \
- ../include/cd_private.h ../include/cddbuf.h ../include/cdimage.h \
- ../include/cdnative.h sim/cd_truetype.h sim/sim.h
-$(OBJDIR)/cdxrplus.o: xrender/cdxrplus.c ../include/cd.h ../include/cd_private.h

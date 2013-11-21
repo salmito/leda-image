@@ -229,6 +229,15 @@ void imlua_regconstants (lua_State *L, const imlua_constant *imconst)
   lua_settable(L, -3);
 }
 
+static int leda_imluaImage_RestoreImage(lua_State *L) {
+	if(!lua_islightuserdata(L,1)) 
+		luaL_argerror(L, 1, "argument must be a lightuserdata");
+	imImage* image_p = lua_touserdata(L, 1);
+
+	imlua_pushimage(L, image_p);
+	return 1;
+}
+
 static const luaL_Reg im_lib[] = {
   {"Version", imluaVersion},
   {"VersionDate", imluaVersionDate},
@@ -239,7 +248,7 @@ static const luaL_Reg im_lib[] = {
   {"FormatInfoExtra", imluaFormatInfoExtra},
   {"FormatCompressions", imluaFormatCompressions},
   {"FormatCanWriteImage", imluaFormatCanWriteImage},
-
+  {"RestoreImage",leda_imluaImage_RestoreImage},
   {NULL, NULL}
 };
 

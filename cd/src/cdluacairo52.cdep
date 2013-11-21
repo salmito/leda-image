@@ -1,6 +1,0 @@
-$(OBJDIR)/cdluacairo5.o: lua5/cdluacairo5.c ../include/cd.h ../include/cdcairo.h \
- /cygdrive/d/tecgraf/lua52/include/lua.h \
- /cygdrive/d/tecgraf/lua52/include/luaconf.h \
- /cygdrive/d/tecgraf/lua52/include/lauxlib.h \
- /cygdrive/d/tecgraf/lua52/include/lua.h ../include/cdlua.h \
- ../include/cdlua5_private.h

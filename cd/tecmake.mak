@@ -665,7 +665,7 @@ CD    ?= $(TECTOOLS_HOME)/cd
 IM    ?= $(TECTOOLS_HOME)/im
 LUA   ?= $(TECTOOLS_HOME)/lua
 LUA51 ?= $(TECTOOLS_HOME)/lua5.1
-LUA52 ?= $(TECTOOLS_HOME)/lua52
+LUA52 ?= $(TECTOOLS_HOME)/lua5.2
 
 
 #---------------------------------#

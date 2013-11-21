@@ -861,6 +861,13 @@ static int imluaImage_gc (lua_State *L)
   return 0;
 }
 
+static int leda_imluaImage_ReleaseImage(lua_State *L) {
+	imImage** image_p = imlua_rawcheckimage(L, 1);
+  	lua_pushlightuserdata(L,*image_p);
+  	*image_p=NULL; /* mark as destroyed */
+	return 1;
+}
+
 /*****************************************************************************\
  image tostring
 \*****************************************************************************/
@@ -1163,7 +1170,7 @@ static const luaL_Reg imimage_metalib[] = {
   {"ColorSpace", imluaImageColorSpace},
   {"HasAlpha", imluaImageHasAlpha},
   {"Save", imluaImageSave},
-
+  {"Release",leda_imluaImage_ReleaseImage},
   {"__gc", imluaImage_gc},
   {"__tostring", imluaImage_tostring},
   {"__index", imluaImage_index},
