@@ -1,5 +1,6 @@
 #!/bin/bash
 
+LUA_VER=5.2
 # Include TEC_UNAME definitions
 source tec_uname
 
@@ -13,7 +14,7 @@ echo '     sudo ./uninstall'
 echo ' '
 
 Remove_Lua_Links()
-{
+{	
   rm -fv $TEC_LUA_LIB/$1lua*.so
 }
 
@@ -38,6 +39,9 @@ Remove_From_System()
   fi
   
   Remove_Lua_Links $1
+  LUA_VER=5.1
+  ComputeSystemPaths
+  Remove_Lua_Links $1
 }
 
 # From tec_uname script
@@ -47,3 +51,4 @@ ComputeSystemPaths
 
 Pause
 Remove_From_System im
+Remove_From_System cd

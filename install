@@ -17,9 +17,9 @@ EchoDownloadTip()
   echo '  The downloaded package must already be unpacked in the current directory.'
   echo '  Do NOT unpack different packages in the same directory.'
   echo '  For example:'
-  echo '     mkdir cd'
-  echo '     cd cd'
-  echo '     tar -xpvzf ../cd-X.X_Linux26g4_lib.tar.gz'
+  echo '     mkdir im'
+  echo '     cd im'
+  echo '     tar -xpvzf ../im-X.X_Linux26g4_lib.tar.gz'
   echo ' '
 }
 
@@ -43,24 +43,20 @@ Copy_RunTime_To_System()
 
 Install_RunTime()
 {
-  if [ -d lib/$TEC_UNAME ]; then
-    echo '  Installing from build directory' lib/$TEC_UNAME
+  if [ -d $1/lib/$TEC_UNAME ]; then
+    echo '  Installing from build directory' $1/lib/$TEC_UNAME
     echo ' '
     Pause
-    Copy_RunTime_To_System $1 lib/$TEC_UNAME/
+    Copy_RunTime_To_System $1 $1/lib/$TEC_UNAME/
   else
-    echo '  The directory' lib/$TEC_UNAME 'was not found,'
-    echo '  so installing from unpacked download.'
-    echo ' '
-    EchoDownloadTip
-    Pause
-    Copy_RunTime_To_System $1
+    echo '  Error installing, directory $1/lib/$TEC_UNAME not found'
   fi
 }
 
 # From tec_uname script
 ComputeTecUname
 ComputeSystemPaths
-#PrintInfo
+PrintInfo
 
+Install_RunTime im
 Install_RunTime cd

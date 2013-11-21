@@ -136,19 +136,22 @@ ComputeTecUname()
 
 ComputeSystemPaths()
 {
-  if [ $TEC_SYSARCH == x64 ]; then
-    if [ -d /usr/lib64 ]; then
-      TEC_SYSTEM_LIB=/usr/lib64
-    else
-      TEC_SYSTEM_LIB=/usr/lib
-    fi
-  else
+  if [ -z "$PREFIX" ]; then
     TEC_SYSTEM_LIB=/usr/lib
+  else
+  	 TEC_SYSTEM_LIB="$PREFIX"
   fi
 
   TEC_SYSTEM_INC=/usr/include
+
+  if [ -z "$LUA_PREFIX" ]; then
+  	   TEC_LUA_LIB=/usr/local/lib/lua/$LUA_VER
+  else
+      TEC_LUA_LIB="$LUA_PREFIX"
+  fi
+
   
-  TEC_LUA_LIB=$TEC_SYSTEM_LIB/lua/$LUA_VER
+
 }
 
 PrintInfo()
@@ -161,4 +164,5 @@ PrintInfo()
   echo 'TEC_SYSARCH='$TEC_SYSARCH
   echo 'TEC_SYSTEM_LIB='$TEC_SYSTEM_LIB
   echo 'TEC_SYSTEM_INC='$TEC_SYSTEM_INC
+  echo 'TEC_LUA_LIB='$TEC_LUA_LIB
 }
